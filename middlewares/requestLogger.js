@@ -35,7 +35,7 @@ const requestLogger = (req, res, next) => {
     
 
     
-    const logEntry = JSON.stringify(logDetails) + '\n';
+    const logEntry = JSON.stringify(logDetails, null, 2) + '\n';
     fs.appendFile(logFilePath, logEntry, (err) => {
         if (err) {
             console.error('Failed to write log:', err);

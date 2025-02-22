@@ -10,7 +10,7 @@ app.use(requestLogger);
 
 
 app.get('/', (req, res) => {
-    res.send('Hello i am jatin sharma and this is the Express.js logging application!');
+    res.send('Hello i am Nishant');
 });
 
 const PORT = 3000;
